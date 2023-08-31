@@ -1,35 +1,123 @@
+* {
+  box-sizing: border-box;
+}
 ul {
   list-style: none;
 }
 
-h2 {
-  text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  /* text-align: center; */
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-div {
-  outline: 2px solid red;
-  width: 1440px;
+.header {
+  height: 150px;
+  max-width: 1440px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 205px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(43, 74, 97, 0.87),
+      rgba(43, 74, 97, 0.8)
+    ),
+    url("../images/header-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 3px solid #ffffff;
+}
+
+.container {
+  width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container.position {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  max-width: 1440px;
+  height: 740px;
   margin-left: auto;
   margin-right: auto;
 }
 
-button {
-  font-family: "HeadlandOne";
+.section.hero {
+  padding: 180px 204px;
+  background-image: url("../images/bg-image-1.png");
+}
+.hero-button {
+  font-family: "Headland One";
   font-weight: 400;
   font-size: 24px;
   text-align: center;
-  width: 140px;
   color: #26c6ea;
   background-color: #0b0e66;
   border: 2px solid #26c6ea;
   border-radius: 35px 0px;
-  /* padding-top: 25px; */
+  margin-top: 42px;
+  padding: 10px 30px;
+  width: 260px;
 }
 
+.button-header {
+  display: block;
+  width: 140px;
+  font-family: "Headland One";
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #26c6ea;
+  background-color: #0b0e66;
+  border: 2px solid #26c6ea;
+  border-radius: 35px 0px;
+  padding: 9px 38px;
+  line-height: 1.25;
+}
+
+.trailer-button {
+  display: block;
+  width: 260px;
+  font-family: "Headland One";
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #26c6ea;
+  background-color: #0b0e66;
+  border: 2px solid #26c6ea;
+  border-radius: 35px 0px;
+  padding: 25px 20px;
+  line-height: 1.25;
+}
 /* .navigation {
   height: 150px;
 } */
@@ -57,6 +145,7 @@ button {
   font-family: "Inter";
   font-size: 20px;
   font-weight: 400;
+  color: white;
 }
 
 .quote-text {
@@ -90,13 +179,7 @@ button {
   font-family: "Headland One";
   font-weight: 400;
   font-size: 24px;
-}
-
-.nav-list,
-.second-nav-list {
-  display: flex;
-  justify-content: space space-between;
-  gap: 38px;
+  padding-top: 36px;
 }
 
 .navigation {
@@ -109,14 +192,27 @@ button {
 }
 
 .language-list-item {
-  width: 320px;
+  width: 310px;
   height: 240px;
-  outline: dashed 2px black;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-.big-bird-image {
+.language-list-image {
+  width: 150px;
+  height: 40px;
+  display: block;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
+}
+.big-bird-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 43px;
 }
 
 .main-list-text {
@@ -126,6 +222,11 @@ button {
 .trailer {
   height: 740px;
   background-image: url("../images/Rectangle-10.png");
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  flex-shrink: 0;
 }
 
 .nav-list {
@@ -142,6 +243,175 @@ button {
 
 .nav {
   height: 150px;
-  background-image: url("../images/Rectangle104.png");
-  box-shadow: 87% #2b4a61;
+}
+
+.nav-list-item {
+  margin-top: 65px;
+}
+
+.main-div {
+  background-image: url(../images/bg-image-1.png);
+  height: 740px;
+}
+
+.networks-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+
+.big-bird-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.language-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 35px;
+  row-gap: 25px;
+  margin-top: 45px;
+  font-size: 24px;
+}
+
+.networks-list-item + .networks-list-item {
+  margin-top: 25px;
+}
+
+.language-item {
+  color: #fff;
+  text-align: center;
+  font-family: "Hammersmith One";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.language-div {
+  background-image: url("../images/language-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1440px;
+  height: 704px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 57px 204px;
+}
+
+.first-quote-text {
+  text-align: center;
+}
+
+.quote-text {
+  text-align: center;
+}
+
+.trailer-button {
+  display: block;
+  margin: auto;
+}
+
+.footer {
+  max-width: 1440px;
+  height: 225px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(43, 74, 97, 0.87),
+      rgba(43, 74, 97, 0.8)
+    ),
+    url("../images/footer-b.png");
+  background-repeat: no-repeat;
+  padding: 35px 204px;
+}
+
+.footer-list-title-text {
+  color: #fff;
+  text-align: justify;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-list-text {
+  color: #fff;
+  text-align: justify;
+  font-family: "Inter";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer-list-item + .footer-list-item {
+  margin-top: 16px;
+}
+.footer-list {
+  margin-left: 80px;
+  width: 690px;
+}
+
+.footer-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-line {
+  margin-left: 80px;
+}
+
+.footer-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trailer {
+  padding-top: 330px;
+}
+
+.quote {
+  height: 350px;
+  padding-top: 75px;
+  padding-bottom: 10px;
+  padding-left: 280px;
+  padding-right: 230px;
+}
+
+.language-div {
+  /* width: ; */
+}
+
+.hero-position {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-image {
+  display: block;
+  margin-left: 53px;
+}
+
+.main-button {
+  margin-top: 42px;
+  padding: 10px 30px;
+}
+
+.footer-copyright {
+  color: white;
+  margin-left: 475px;
+}
+
+.first-quote {
+  padding-top: 75px;
+  padding-bottom: 10px;
+  padding-left: 280px;
+  padding-right: 230px;
 }

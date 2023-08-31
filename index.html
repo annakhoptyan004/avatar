@@ -15,16 +15,16 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
+    <header class="header">
+      <div class="container position">
+        <a class="logo-link" href="#">
+          <img
+            class="logo-image"
+            src="./images/logo.png"
+            alt="Логотип Аватар"
+          />
+        </a>
         <nav class="nav">
-          <a class="logo-link" href="#">
-            <img
-              class="logo-image"
-              src="./images/logo.png"
-              alt="Логотип Аватар"
-            />
-          </a>
           <ul class="nav-list">
             <li class="nav-list-item">
               <a class="nav-link-main" href="#">Головна</a>
@@ -36,55 +36,40 @@
               <a class="nav-link" href="#">Контакти</a>
             </li>
           </ul>
-          <ul class="second-nav-list">
-            <li class="nav-item">
-              <button class="sign-up-button">Увійти</button>
-            </li>
-            <li class="nav-item">
-              <span class="language-item">ENG</span>
-            </li>
-            <li>
-              <img
-                class="switcher-class"
-                src="./images/Switcher.png"
-                alt="Перемикач мови"
-              />
-            </li>
-            <li class="nav-item">
-              <span class="language-item">UA</span>
-            </li>
-          </ul>
-          <!-- <hr class="horizontal-line" /> -->
-          <!-- </div> -->
         </nav>
-      </header>
-      <main class="main">
-        <div class="main-div">
-          <ul class="main-list">
-            <li class="main-list-item">
-              <p class="main-list-text">
-                Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx 'ì'awn
-                slu Na'viyä hapxì. Säwem nìayoeng!
-              </p>
-            </li>
-            <li class="main-list-item">
-              <img
-                class="arrow-image"
-                src="./images/arrow-left-side-white.svg"
-                alt="Стріла"
-              />
-            </li>
-            <li class="main-list-item">
-              <p class="main-list-text">
-                Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє
-                тіло залишається, щоб стати частиною Народу. Борись разом з
-                нами!
-              </p>
-            </li>
-            <li class="main-list-item">
-              <button class="button">Приєднатися до клану</button>
-            </li>
-          </ul>
+        <button class="button-header">Увійти</button>
+      </div>
+      <div>
+        <span class="language-item">ENG</span>
+        <img
+          class="switcher-class"
+          src="./images/Switcher.png"
+          alt="Перемикач мови"
+        />
+        <span class="language-item">UA</span>
+      </div>
+      <!-- <hr class="horizontal-line" /> -->
+      <!-- </div> -->
+    </header>
+    <main class="main">
+      <section class="section hero">
+        <div class="container hero-position">
+          <div>
+            <p class="main-list-text">
+              Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx 'ì'awn
+              slu Na'viyä hapxì. Säwem nìayoeng!
+            </p>
+            <img
+              class="arrow-image"
+              src="./images/arrow-left-side-white.svg"
+              alt="Стріла"
+            />
+            <p class="main-list-text">
+              Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє тіло
+              залишається, щоб стати частиною Народу. Борись разом з нами!
+            </p>
+            <button class="hero-button">Приєднатися до клану</button>
+          </div>
           <ul class="networks-list">
             <li class="networks-list-item">
               <a class="networks-list-link" href="#">
@@ -115,7 +100,9 @@
             </li>
           </ul>
         </div>
-        <div class="quote">
+      </section>
+      <section class="first-quote">
+        <div class="container">
           <h2 class="first-quote-text">“БАГАТО ЛЮДЕЙ З НЕБА ПРИЙДЕ. ВОНИ</h2>
           <h2 class="quote-text">
             ПРИЙДУТЬ, ЯК ГРОЗА, ЯКА НІКОЛИ НЕ ЗАКІНЧУЄТЬСЯ.”
@@ -127,22 +114,24 @@
             alt="Пташка"
           />
         </div>
-        <div class="trailer">
-          <!-- <button class="trailer-button"> -->
-          <button class="button-link">Дивитись трейлер</button>
-          <!-- </button> -->
-        </div>
-        <div class="quote">
-          <h2 class="quote-text">“ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ</h2>
-          <h2 class="quote-text">ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”</h2>
-          <p class="quotes-author">Джейк Саллі</p>
-          <img
-            class="big-bird-image"
-            src="./images/bird-big-size.png"
-            alt="Пташка"
-          />
-        </div>
-        <div class="language-div">
+      </section>
+      <section class="trailer">
+        <a class="button-link">
+          <button class="trailer-button">Дивитись трейлер</button>
+        </a>
+      </section>
+      <section class="quote">
+        <h2 class="quote-text">“ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ</h2>
+        <h2 class="quote-text">ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”</h2>
+        <p class="quotes-author">Джейк Саллі</p>
+        <img
+          class="big-bird-image"
+          src="./images/bird-big-size.png"
+          alt="Пташка"
+        />
+      </section>
+      <section class="language-div">
+        <div class="container">
           <h3 class="language-header">Вчимо мову На’ві</h3>
           <ul class="language-list">
             <li class="language-list-item">
@@ -201,21 +190,21 @@
             </li>
           </ul>
         </div>
-        <div class="quote">
-          <h2 class="quote-text">
-            “НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ,
-          </h2>
-          <h2 class="quote-text">ВОНА ЗАХИЩАЄ ЛИШЕ ЖИТТЄВИЙ БАЛАНС.”</h2>
-          <p class="quotes-author">Нейтірі</p>
-          <img
-            class="big-bird-image"
-            src="./images/bird-big-size.png"
-            alt="Пташка"
-          />
-        </div>
-      </main>
-      <footer class="footer">
-        <div class="footer-div">
+      </section>
+      <section class="quote">
+        <h2 class="quote-text">“НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ,</h2>
+        <h2 class="quote-text">ВОНА ЗАХИЩАЄ ЛИШЕ ЖИТТЄВИЙ БАЛАНС.”</h2>
+        <p class="quotes-author">Нейтірі</p>
+        <img
+          class="big-bird-image"
+          src="./images/bird-big-size.png"
+          alt="Пташка"
+        />
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-position">
           <a class="logo-link" href="#">
             <img
               class="logo-image"
@@ -223,23 +212,30 @@
               alt="Логотип Аватар"
             />
           </a>
+          <img class="vertical-line" src="./images/vertical-line.png" />
           <ul class="footer-list">
             <li class="footer-list-item">
-              <p class="footer-list-text">Q&A E-mail</p>
-              <hr class="dashed-line" />
+              <p class="footer-list-title-text">Q&A E-mail</p>
+              <img
+                class="first-dashed-line"
+                src="./images/first-dashed-line.png"
+              />
               <p class="footer-list-text">avatartwowqa@gmail.com</p>
             </li>
             <li class="footer-list-item">
-              <p class="footer-list-text">Cooperation E-mail</p>
-              <hr class="dashed-line" />
+              <p class="footer-list-title-text">Cooperation E-mail</p>
+              <img
+                class="second-dashed-line"
+                src="./images/second-dashed-line.png"
+              />
               <p class="footer-list-text">avatartwowcoop@gmail.com</p>
             </li>
           </ul>
-          <small class="footer-copyright">
-            ©2023 Avatar: The Way Of Water. All rights reserved
-          </small>
         </div>
-      </footer>
-    </div>
+        <small class="footer-copyright">
+          ©2023 Avatar: The Way Of Water. All rights reserved
+        </small>
+      </div>
+    </footer>
   </body>
 </html>
